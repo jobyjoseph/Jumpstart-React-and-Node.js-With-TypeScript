@@ -12,11 +12,38 @@ Install `styled-components`. Using styled-components, apply **red** color to hea
 
 ![Red header](assets/red-header.png)
 
+First we need to install `styled-components` package. Import it in our `index.js` using:
+
+```javascript
+import styled from "styled-components";
+```
+
+Then `<Header/>` can be created like:
+
+```javascript
+const Header = styled.h1`
+  color: red;
+`;
+```
+
 ## Task 2: Media Queries
 
 Right now, the header size is same for both desktops and mobile devices. We need a smaller size of **24px** for Header in mobile devices with width upto **480px**. Also, change the color to green just for us to understand that the mobile style is applied. Implement that using media query.
 
 ![Green header](assets/green-header.png)
+
+Updated `<Header />` element:
+
+```javascript
+const Header = styled.h1`
+  color: red;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    color: green;
+  }
+`;
+```
 
 ## Task 3: Extending Components
 
@@ -32,3 +59,12 @@ Add the `<Hero>` element to component before `<Header>` to see how it works. Thi
 ```
 
 ![Green header](assets/hero-header.png)
+
+Hero element:
+
+```javascript
+const Hero = styled(Header)`
+  color: blue;
+  font-size: 100px;
+`;
+```

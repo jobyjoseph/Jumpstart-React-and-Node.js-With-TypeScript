@@ -12,6 +12,10 @@ First step before creating components, is to look at the design and identify the
 
 Try to complete the task yourself with your existing knowledge. You need to focus only the styling part. You do not have to worry about the functionality.
 
+> The font used in the design is [Rubik Google Font](https://fonts.google.com/specimen/Rubik)
+
+> You can find the design spec here: [https://xd.adobe.com/view/3487155e-355e-4e9d-9935-2aa51768ae42-61d4/specs/](https://xd.adobe.com/view/3487155e-355e-4e9d-9935-2aa51768ae42-61d4/specs/)
+
 ## Running the application
 
 When you finally run the application, it should show the above quiz design on the page. That's it.
